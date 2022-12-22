@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">INMIND</string>
+    <string name="regitster_mail">Masuk dengan Email</string>
+    <string name="register_google">Masuk dengan Google</string>
 </resources>

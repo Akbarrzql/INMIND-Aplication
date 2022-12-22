@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    //INMIND colors main
+    <color name="inmind_primary">#f8f5ee</color>
+    <color name="inmind_primary_dark">#313944</color>
+
+    //text
+    <color name="inmind_text">#313944</color>
+    <color name="inmind_text_light">#f8f5ee</color>
 </resources>

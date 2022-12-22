@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "39859021466",
+    "project_id": "inmind-3fd04",
+    "storage_bucket": "inmind-3fd04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39859021466:android:45c896e92499b8a88ca123",
+        "android_client_info": {
+          "package_name": "com.example.inmind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39859021466-lsjp8j0gd9n5ju2vp2dffuomq5t2bnqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.inmind",
+            "certificate_hash": "20bd87f97629dcbc26c1815e8acaa80502ecb0ee"
+          }
+        },
+        {
+          "client_id": "39859021466-dt8c0cojopl1k9jlstouovgcrdf7sqk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzgRwaHnsyTZMo4OwE5oxbtRKiluhET4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39859021466-dt8c0cojopl1k9jlstouovgcrdf7sqk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
