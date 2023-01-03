@@ -9,7 +9,6 @@ import android.widget.Toast
 import com.example.inmind.MainActivity
 import com.example.inmind.R
 import com.example.inmind.databinding.ActivityRegisterBinding
-import com.example.inmind.profile.ProfileActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_register.*
 
@@ -87,7 +86,7 @@ class RegisterActivity : AppCompatActivity() {
                 val firebaseUser = auth.currentUser
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "Akun $email berhasil dibuat", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener { e ->

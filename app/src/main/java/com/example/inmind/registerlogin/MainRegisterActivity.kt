@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.inmind.MainActivity
 import com.example.inmind.R
 import com.example.inmind.databinding.ActivityMainRegisterBinding
-import com.example.inmind.profile.ProfileActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -59,7 +59,7 @@ class MainRegisterActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val firebaseUser = auth.currentUser
         if (firebaseUser != null) {
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }
@@ -88,7 +88,7 @@ class MainRegisterActivity : AppCompatActivity() {
         val credential = GoogleAuthProvider.getCredential(account.idToken , null)
         auth.signInWithCredential(credential).addOnCompleteListener {
             if (it.isSuccessful){
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }else{
                 Toast.makeText(this, it.exception.toString() , Toast.LENGTH_SHORT).show()

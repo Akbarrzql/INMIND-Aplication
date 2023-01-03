@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
+import com.example.inmind.MainActivity
 import com.example.inmind.R
 import com.example.inmind.databinding.ActivityLoginBinding
-import com.example.inmind.profile.ProfileActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.btn_login
@@ -76,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
             val firebaseUser = auth.currentUser
             val email = firebaseUser!!.email
             Toast.makeText(this, "Login berhasil dengan email $email", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
             }
             .addOnFailureListener {
                 progress.dismiss()
@@ -98,7 +98,7 @@ class LoginActivity : AppCompatActivity() {
     private fun checkUser() {
         val firebaseUser = auth.currentUser
         if (firebaseUser != null) {
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }
